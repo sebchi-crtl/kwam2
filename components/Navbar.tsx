@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-6 py-4 flex items-center justify-between bg-white">
+    <nav className="w-full px-6 py-4 flex items-center justify-between bg-white max-w-[90rem] mx-auto">
       {/* Logo */}
       <div className="flex items-center">
         <Link href="/" className="flex items-center space-x-1">
-          <span className="text-2xl font-bold text-orange-500 font-rubik">KWAM</span>
-          <span className="text-2xl font-bold text-green-500 font-rubik">2</span>
+          <Image src="/image/landing/logo.svg" className="w-44 h-20 object-contain" alt="logo" width={100} height={100} />
         </Link>
       </div>
 
