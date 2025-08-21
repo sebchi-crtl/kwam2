@@ -15,7 +15,7 @@ export default function Banner() {
           <Card className="bg-white border-0 shadow-none relative px-4 xl:px-10">
             <CardHeader>
               <CardTitle className="flex justify-start items-start">
-                <Image src="/image/landing/icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
+                <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
               </CardTitle>
               </CardHeader>
               <CardContent>
