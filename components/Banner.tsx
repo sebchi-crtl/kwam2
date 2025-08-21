@@ -19,7 +19,8 @@ export default function Banner() {
         </div>
       </section>
       <div className="flex justify-center w-full">
-        <Image src="/image/landing/banner_hero.svg" className="w-full h-full object-cover" alt="banner" width={1000} height={1000} />
+      <Image src="/image/landing/banner_hero.svg" className="w-full h-full object-cover max-md:hidden" alt="banner" width={1000} height={1000} />
+      <Image src="/image/landing/banner_hero_mobile.svg" className="w-full h-full object-cover max-md:block hidden" alt="banner" width={1000} height={1000} />
       </div>
     </div>
   );
