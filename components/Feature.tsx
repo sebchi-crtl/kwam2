@@ -34,30 +34,37 @@ export default function Banner() {
             </CardContent>
           </Card>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-16">
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5">
+            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
-                  <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
+                  <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[12rem]">Safe and Secure Login</p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full xl:max-w-3xl 3xl:max-w-4xl text-1xl xl:text-2xl 3xl:text-3xl font-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-left text-black w-full text-lg xl:text-2xl 3xl:text-3xl font-light max-w-[12rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
+                <div className="min-md:absolute bottom-0 min-md:right-[0rem] h-full">
+                  <Image src="/image/landing/featured2.svg" className="max-md:w-full w-[10rem] h-full max-md:-mt-15 max-md:-mr-10" alt="logo" width={100} height={100} />
+                </div>
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5">
+            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
-                  <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
+                  <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">Stress-free booking and event planning</p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full xl:max-w-3xl 3xl:max-w-4xl text-1xl xl:text-2xl 3xl:text-3xl font-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-left text-black w-full text-xl xl:text-2xl 3xl:text-3xl font-light max-w-[15rem]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 </p>
+                <div className="min-md:absolute -bottom-5 -right-[5rem] h-full">
+                  <Image src="/image/landing/featured3.svg" className="max-md: w-[80%] h-full max-md:-mt-44" alt="logo" width={100} height={100} />
+                </div>
+                {/* <div className="max-md:block hidden h-full w-full">
+                  <Image src="/image/landing/featured1_mobile.svg" className="w-full h-full object-contain" alt="logo" width={100} height={100} />
+                </div> */}
               </CardContent>
             </Card>
             <Card className="bg-white border-0 shadow-none relative 3xl:px-5">
