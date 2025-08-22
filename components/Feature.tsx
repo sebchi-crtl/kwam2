@@ -33,15 +33,15 @@ export default function Banner() {
               </div>
             </CardContent>
           </Card>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-8 mt-16">
             <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
-                  <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[12rem]">Safe and Secure Login</p>
+                  <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[18rem]">Safe and Secure Login</p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-lg xl:text-2xl 3xl:text-3xl font-light max-w-[12rem]">
+                <p className="mb-4 text-left text-black w-full text-lg xl:text-2xl 3xl:text-3xl font-light max-w-[14rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div className="min-md:absolute bottom-0 -right-[3.3rem] h-full">
