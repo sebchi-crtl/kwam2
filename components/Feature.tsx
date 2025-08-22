@@ -44,8 +44,8 @@ export default function Banner() {
                 <p className="mb-4 text-left text-black w-full text-lg xl:text-2xl 3xl:text-3xl font-light max-w-[12rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
-                <div className="min-md:absolute bottom-0 min-md:right-[0rem] h-full">
-                  <Image src="/image/landing/featured2.svg" className="max-md:w-full w-[10rem] h-full max-md:-mt-15 max-md:-mr-10" alt="logo" width={100} height={100} />
+                <div className="min-md:absolute bottom-0 -right-[3.3rem] h-full">
+                  <Image src="/image/landing/featured2.svg" className="w-[80%] max-md:w-[60%] h-full max-md:-mt-40 max-md:ml-38" alt="logo" width={100} height={100} />
                 </div>
               </CardContent>
             </Card>
@@ -59,25 +59,29 @@ export default function Banner() {
                 <p className="mb-4 text-left text-black w-full text-xl xl:text-2xl 3xl:text-3xl font-light max-w-[15rem]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 </p>
-                <div className="min-md:absolute -bottom-5 -right-[5rem] h-full">
-                  <Image src="/image/landing/featured3.svg" className="max-md: w-[80%] h-full max-md:-mt-44" alt="logo" width={100} height={100} />
+                <div className="min-md:absolute -bottom-5  -right-[5rem] h-full">
+                  <Image src="/image/landing/featured3.svg" className=" w-[80%] h-full max-md:-mt-24 max-md:ml-22" alt="logo" width={100} height={100} />
                 </div>
                 {/* <div className="max-md:block hidden h-full w-full">
                   <Image src="/image/landing/featured1_mobile.svg" className="w-full h-full object-contain" alt="logo" width={100} height={100} />
                 </div> */}
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5">
+            <Card className="bg-white border-0 shadow-none overflow-hidden 3xl:px-5">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
-                  <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
+                  <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">
+                    Instant Payment-subscription
+                  </p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full xl:max-w-3xl 3xl:max-w-4xl text-1xl xl:text-2xl 3xl:text-3xl font-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-left text-black w-full text-xl xl:text-2xl 3xl:text-3xl font-light">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
+                <div className="flex justify-center items-center w-full h-full">
+                  <Image src="/image/landing/featured4.svg" className=" h-full w-[50%] max-md:w-[70%] -mt-20" alt="logo" width={100} height={100} />
+                </div>
               </CardContent>
             </Card>
           </div>
