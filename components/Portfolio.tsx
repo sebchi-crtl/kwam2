@@ -71,7 +71,7 @@ const Portfolio = () => {
   }
 
   return (
-    <div className='bg-gray-100 w-full h-full min-md:rounded-t-[9rem] mx-auto'>
+    <div className='bg-white w-full h-full min-md:rounded-t-[9rem] mx-auto'>
       <section className='text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-16 mt-32'>
         
         <h1 className='text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-orange-500 mb-6 font-rubik flex flex-col gap-6'>
@@ -134,7 +134,7 @@ const Portfolio = () => {
                   }}
                 >
                 <div className={`w-[400px] h-[320px] rounded-3xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 ${
-                  isActive ? 'bg-orange-500' : 'bg-white'
+                  isActive ? 'bg-orange-500' : 'bg-gray-100 border border-orange-200'
                 }`}>
                 {/* Price Tag */}
                 {/* <div className="absolute top-4 right-4 bg-white text-black px-3 py-2 rounded-full text-lg font-semibold">
@@ -166,7 +166,7 @@ const Portfolio = () => {
            <div className="flex items-center justify-center gap-6 mt-12">
              <button
                onClick={prevSlide}
-               className="w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
+               className="w-16 h-16 bg-gray-100 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
              >
                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -188,7 +188,7 @@ const Portfolio = () => {
             
                          <button
                onClick={nextSlide}
-               className="w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
+               className="w-16 h-16 bg-gray-100 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
              >
                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

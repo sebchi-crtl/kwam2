@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
 import Portfolio from "@/components/Portfolio";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
           <Feature />
           <Portfolio />
         </div>
+        
+        <Footer />
       </main>
     </div>
   );
