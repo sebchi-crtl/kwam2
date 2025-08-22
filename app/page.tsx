@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <main className="pt-16">
         <Banner />
         <Hero />
-        <div className="flex justify-center mt-6">
+        <div className="flex flex-col justify-center mt-6 bg-black min-md:rounded-t-[9rem]">
           <Feature />
+          <Portfolio />
         </div>
       </main>
     </div>
