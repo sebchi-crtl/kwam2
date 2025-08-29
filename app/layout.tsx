@@ -6,6 +6,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
+import Banner from "@/components/Banner";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Feature from "@/components/Feature";
+import Portfolio from "@/components/Portfolio";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +43,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen bg-white mt-5">
+          <Navbar />
+          <main className="pt-16">
+            {children}
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );

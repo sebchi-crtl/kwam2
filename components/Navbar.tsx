@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="w-full px-6 py-4 flex items-center justify-between bg-white max-w-[90rem] mx-auto">
       {/* Logo */}
@@ -18,19 +21,31 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-8 bg-orange-100 px-8 py-2 rounded-full text-xl">
         <Link 
           href="/" 
-          className="text-orange-500 font-medium hover:text-orange-600 transition-colors font-rubik"
+          className={`font-medium transition-colors font-rubik ${
+            pathname === "/" 
+              ? "text-orange-500" 
+              : "text-gray-600 hover:text-gray-800"
+          }`}
         >
           Home
         </Link>
         <Link 
           href="/about" 
-          className="text-gray-600 font-medium hover:text-gray-800 transition-colors font-rubik"
+          className={`font-medium transition-colors font-rubik ${
+            pathname === "/about" 
+              ? "text-orange-500" 
+              : "text-gray-600 hover:text-gray-800"
+          }`}
         >
           About Us
         </Link>
         <Link 
           href="/meet" 
-          className="text-gray-600 font-medium hover:text-gray-800 transition-colors font-rubik"
+          className={`font-medium transition-colors font-rubik ${
+            pathname === "/meet" 
+              ? "text-orange-500" 
+              : "text-gray-600 hover:text-gray-800"
+          }`}
         >
           Meet Us
         </Link>
