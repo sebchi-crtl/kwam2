@@ -17,7 +17,7 @@ const Footer = () => {
       {/* Footer Section */}
       <footer className='bg-white border-t border-gray-100'>
         <div className='max-w-[120rem] mx-auto px-8 xl:px-24 py-12'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 place-items-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 min-md:place-items-center'>
             {/* Company Branding */}
             <div className='lg:col-span-1'>
                 <Image src="/image/landing/Logo.svg" alt="logo" width={250} height={250} />
