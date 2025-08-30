@@ -127,3 +127,167 @@
     font-family: var(--font-rubik);
   }
 }
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay2 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay3 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay4 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay5 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  85% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay6 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay7 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  95% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay8 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay {
+  animation: fadeInUpDelay 1.2s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUpDelay2 1.6s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-3 {
+  animation: fadeInUpDelay3 2s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-4 {
+  animation: fadeInUpDelay4 2.4s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-5 {
+  animation: fadeInUpDelay5 2.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-6 {
+  animation: fadeInUpDelay6 3.2s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-7 {
+  animation: fadeInUpDelay7 3.6s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-8 {
+  animation: fadeInUpDelay8 4s ease-out forwards;
+}

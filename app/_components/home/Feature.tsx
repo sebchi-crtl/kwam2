@@ -5,14 +5,14 @@ export default function Feature() {
   return (
     <div className="bg-black w-full h-full min-md:rounded-t-[9rem] mx-auto">
       <section className="text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32">
-        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-orange-400 mb-6 font-rubik flex flex-col">
+        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-orange-400 mb-6 font-rubik flex flex-col animate-fade-in-up">
           Featured Projects
-          <span className="text-white font-light text-xl xl:text-2xl">
+          <span className="text-white font-light text-xl xl:text-2xl animate-fade-in-up-delay">
             A glimpse of attend
           </span>
         </h1>
         <div className="text-lg md:text-xl text-gray-600 leading-relaxed mt-12 mx-auto font-rubik">
-          <Card className="bg-white border-0 shadow-none relative px-4 xl:px-10">
+          <Card className="bg-white border-0 shadow-none relative px-4 xl:px-10 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-2">
             <CardHeader>
               <CardTitle className="flex justify-start items-start">
                 <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
@@ -34,7 +34,7 @@ export default function Feature() {
             </CardContent>
           </Card>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-8 mt-16">
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden">
+            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-3">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[18rem]">Safe and Secure Login</p>
@@ -45,11 +45,11 @@ export default function Feature() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div className="min-md:absolute bottom-0 -right-[3.3rem] h-full">
-                  <Image src="/image/landing/featured2.svg" className="w-[80%] max-md:w-[60%] h-full max-md:-mt-40 max-md:ml-38" alt="logo" width={100} height={100} />
+                  <Image src="/image/landing/featured2.svg" className=" w-[80%] max-md:w-[60%] h-full max-md:-mt-40 max-md:ml-38" alt="logo" width={100} height={100} />
                 </div>
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden">
+            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-4">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">Stress-free booking and event planning</p>
@@ -62,12 +62,9 @@ export default function Feature() {
                 <div className="min-md:absolute -bottom-5  -right-[5rem] h-full">
                   <Image src="/image/landing/featured3.svg" className=" w-[80%] h-full max-md:-mt-24 max-md:ml-22" alt="logo" width={100} height={100} />
                 </div>
-                {/* <div className="max-md:block hidden h-full w-full">
-                  <Image src="/image/landing/featured1_mobile.svg" className="w-full h-full object-contain" alt="logo" width={100} height={100} />
-                </div> */}
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none overflow-hidden 3xl:px-5">
+            <Card className="bg-white border-0 shadow-none overflow-hidden 3xl:px-5 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-5">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">

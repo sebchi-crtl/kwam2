@@ -3,30 +3,30 @@ import Target from '@/public/image/meet/target.svg'
 
 export default function Values() {
     return (
-        <div className="min-h-screen bg-black text-white py-18 relative overflow-hidden">
+        <div className="min-h-screen bg-black text-white py-18 relative overflow-hidden max-md:px-4">
             {/* Title */}
             <div className="max-w-4xl mx-auto">
-                <h1 className="text-5xl font-bold text-[#FD9717] mb-6">
+                <h1 className="text-5xl font-bold text-[#FD9717] mb-6 animate-fade-in-up">
                     Our Values
                 </h1>
                 
                 {/* Introduction */}
-                <p className="text-lg mb-12 text-gray-300 max-w-3xl">
+                <p className="text-lg mb-12 text-gray-300 max-w-3xl animate-fade-in-up-delay">
                     We are a deeply mission driven company, and these are what we expect our team to emulate cause they are our core ideas we return to when making decisions
                 </p>
                 
                 {/* Values List with Continuous Timeline */}
                 <div className="relative">
                     {/* Central Orange Line */}
-                    <div className="absolute left-8 top-0 w-1 h-full bg-[#FD9717]"></div>
+                    <div className="absolute left-8 top-0 w-1 h-full bg-[#FD9717] animate-fade-in-up-delay-2"></div>
                     
                     {/* Values positioned along the timeline */}
                     <div className="space-y-16">
                         {/* Value 1: Kindness */}
-                        <div className="flex items-start space-x-6">
+                        <div className="flex items-start space-x-6 animate-fade-in-up-delay-3 hover:translate-x-2 transition-transform duration-300">
                             <div className="flex flex-col items-center w-16">
                                 {/* Oval marker that connects seamlessly with the line */}
-                                <div className="w-6 h-6 bg-[#FD9717] rounded-full"></div>
+                                <div className="w-6 h-6 bg-[#FD9717] rounded-full hover:scale-110 transition-transform duration-300"></div>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -39,9 +39,9 @@ export default function Values() {
                         </div>
                         
                         {/* Value 2: Willingness for Growth */}
-                        <div className="flex items-start space-x-6">
+                        <div className="flex items-start space-x-6 animate-fade-in-up-delay-4 hover:translate-x-2 transition-transform duration-300">
                             <div className="flex flex-col items-center w-16">
-                                <div className="w-6 h-6 bg-[#FD9717] rounded-full"></div>
+                                <div className="w-6 h-6 bg-[#FD9717] rounded-full hover:scale-110 transition-transform duration-300"></div>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -54,9 +54,9 @@ export default function Values() {
                         </div>
                         
                         {/* Value 3: Accountability */}
-                        <div className="flex items-start space-x-6">
+                        <div className="flex items-start space-x-6 animate-fade-in-up-delay-5 hover:translate-x-2 transition-transform duration-300">
                             <div className="flex flex-col items-center w-16">
-                                <div className="w-6 h-6 bg-[#FD9717] rounded-full"></div>
+                                <div className="w-6 h-6 bg-[#FD9717] rounded-full hover:scale-110 transition-transform duration-300"></div>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -69,9 +69,9 @@ export default function Values() {
                         </div>
                         
                         {/* Value 4: Mastery */}
-                        <div className="flex items-start space-x-6">
+                        <div className="flex items-start space-x-6 animate-fade-in-up-delay-6 hover:translate-x-2 transition-transform duration-300">
                             <div className="flex flex-col items-center w-16">
-                                <div className="w-6 h-6 bg-[#FD9717] rounded-full"></div>
+                                <div className="w-6 h-6 bg-[#FD9717] rounded-full hover:scale-110 transition-transform duration-300"></div>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -84,9 +84,9 @@ export default function Values() {
                         </div>
                         
                         {/* Value 5: 2getherness */}
-                        <div className="flex items-start space-x-6">
+                        <div className="flex items-start space-x-6 animate-fade-in-up-delay-7 hover:translate-x-2 transition-transform duration-300">
                             <div className="flex flex-col items-center w-16">
-                                <div className="w-6 h-6 bg-[#FD9717] rounded-full"></div>
+                                <div className="w-6 h-6 bg-[#FD9717] rounded-full hover:scale-110 transition-transform duration-300"></div>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -102,7 +102,7 @@ export default function Values() {
             </div>
             
             {/* Dartboard Graphic - Bottom Right */}
-            <div className="absolute w-[25rem] bottom-8 right-8">
+            <div className="absolute w-[25rem] bottom-8 right-8 animate-fade-in-up-delay-8 hover:scale-105 transition-transform duration-500">
                 <div className="relative">
                     
                     {/* Dart */}
