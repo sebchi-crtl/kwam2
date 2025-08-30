@@ -3,7 +3,7 @@ import Target from '@/public/image/meet/target.svg'
 
 export default function Values() {
     return (
-        <div className="min-h-screen bg-black text-white py-18 relative">
+        <div className="min-h-screen bg-black text-white py-18 relative overflow-hidden">
             {/* Title */}
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-5xl font-bold text-[#FD9717] mb-6">
