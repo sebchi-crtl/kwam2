@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Vision1 from '@/public/image/about/vision1.svg';
 import Vision2 from '@/public/image/about/vision2.svg';
 import Vision3 from '@/public/image/about/vision3.svg';
 
@@ -18,7 +17,7 @@ export default function Vision() {
                                     Our Vision
                                 </h2>
                                 <p className="text-lg md:text-xl lg:text-2xl text-black leading-relaxed max-w-2xl">
-                                    To be the world's leading platform for event discovery and planning, fostering meaningful connections across every culture and community.
+                                    To be the world&apos;s leading platform for event discovery and planning, fostering meaningful connections across every culture and community.
                                 </p>
                             </div>
                         </div>

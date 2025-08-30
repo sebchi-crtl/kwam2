@@ -6,11 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
-import Banner from "@/app/_components/home/Banner";
 import Navbar from "@/components/Navbar";
-import Hero from "@/app/_components/home/Hero";
-import Feature from "@/app/_components/home/Feature";
-import Portfolio from "@/app/_components/home/Portfolio";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
