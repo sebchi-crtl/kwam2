@@ -13,9 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -55,21 +53,20 @@ export default function Navbar() {
         </Link>
       </div>
 
-             {/* Desktop Navigation */}
-       <div className="hidden lg:flex items-center space-x-8">
-         {menuItems.map((item) => (
-           <NavigationMenuLink asChild key={item.title}>
-             <Link
-               href={item.url}
-               className={`font-rubik text-lg font-medium transition-colors hover:text-orange-500 ${
-                 pathname === item.url ? "text-orange-500" : "text-gray-600"
-               }`}
-             >
-               {item.title}
-             </Link>
-           </NavigationMenuLink>
-         ))}
-       </div>
+                           {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center space-x-8">
+          {menuItems.map((item) => (
+            <Link
+              key={item.title}
+              href={item.url}
+              className={`font-rubik text-lg font-medium transition-colors hover:text-orange-500 ${
+                pathname === item.url ? "text-orange-500" : "text-gray-600"
+              }`}
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
 
       {/* Desktop Contact Button */}
       <div className="hidden lg:flex items-center">
