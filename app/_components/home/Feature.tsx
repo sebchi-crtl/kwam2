@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Card, CardTitle, CardHeader, CardContent } from "./ui/card";
+import { Card, CardTitle, CardHeader, CardContent } from "../../../components/ui/card";
 
-export default function Banner() {
+export default function Feature() {
   return (
     <div className="bg-black w-full h-full min-md:rounded-t-[9rem] mx-auto">
       <section className="text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32">
