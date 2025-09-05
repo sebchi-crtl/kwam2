@@ -20,8 +20,9 @@ export default function Feature() {
             </CardHeader>
             <CardContent>
               <p className="mb-4 text-left text-black w-full xl:max-w-3xl 3xl:max-w-4xl text-2xl xl:text-3xl 3xl:text-[2.3rem] font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Attend is your all-in-one social experience — from discovering the hottest shows and nights out 
+                to capturing the moments that matter. Whether it’s a wedding, party,  festival, or a livestream; 
+                Attend keeps you connected before, during, and after the event.
               </p>
               <div className="min-md:absolute max-md:hidden bottom-0 right-[5rem] 3xl:right-[10rem]  h-full ">
                 <Image src="/image/landing/featured1buttom.svg" className=" w-full h-full " alt="logo" width={100} height={100} />
@@ -33,7 +34,7 @@ export default function Feature() {
               </div>
             </CardContent>
           </Card>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-5 mt-16">
             <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-3">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
@@ -41,11 +42,13 @@ export default function Feature() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-lg xl:text-2xl 3xl:text-3xl font-light max-w-[14rem]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[16.5rem]">
+                  No more complicated passwords! Your privacy matters. Attend uses one-time 
+                  passcodes to keep your account safe. Log in instantly using your email or social 
+                  account: no hassle, no risks.
                 </p>
-                <div className="min-md:absolute bottom-0 -right-[3.3rem] h-full">
-                  <Image src="/image/landing/featured2.svg" className=" w-[80%] max-md:w-[60%] h-full max-md:-mt-40 max-md:ml-38" alt="logo" width={100} height={100} />
+                <div className="min-md:absolute bottom-0 -right-[5.8rem] h-full">
+                  <Image src="/image/landing/featured2.svg" className=" w-[75%] max-md:w-[60%] h-full max-md:-mt-22 max-md:ml-32" alt="logo" width={100} height={100} />
                 </div>
               </CardContent>
             </Card>
@@ -56,11 +59,13 @@ export default function Feature() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-xl xl:text-2xl 3xl:text-3xl font-light max-w-[15rem]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[17rem]">
+                  From RSVPs to tickets and up to full-scale event coordination, Attend makes 
+                  planning effortless. Browse, book, and manage events in a few taps, all while 
+                  keeping your guests informed and engaged.
                 </p>
-                <div className="min-md:absolute -bottom-5  -right-[5rem] h-full">
-                  <Image src="/image/landing/featured3.svg" className=" w-[80%] h-full max-md:-mt-24 max-md:ml-22" alt="logo" width={100} height={100} />
+                <div className="min-md:absolute -bottom-15 -right-[7rem] h-full">
+                  <Image src="/image/landing/featured3.svg" className=" w-[80%] h-full max-md:-mt-28 max-md:ml-19" alt="logo" width={100} height={100} />
                 </div>
               </CardContent>
             </Card>
@@ -73,8 +78,10 @@ export default function Feature() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-xl xl:text-2xl 3xl:text-3xl font-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light">
+                  Sell tickets, collect payments, and manage subscriptions directly in the app. 
+                  Whether you’re a promoter, artist, or venue, Attend gives you the tools to get paid 
+                  instantly and securely. 
                 </p>
                 <div className="flex justify-center items-center w-full h-full">
                   <Image src="/image/landing/featured4.svg" className=" h-full w-[50%] max-md:w-[70%] -mt-20" alt="logo" width={100} height={100} />
