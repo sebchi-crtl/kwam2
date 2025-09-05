@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export default function JoinUs(){
     return (
@@ -13,10 +14,10 @@ export default function JoinUs(){
             </div>
             
             {/* Bottom Left Section */}
-            <div className="flex items-center space-x-4 animate-fade-in-up-delay-2">
+            <Link target="_blank" href={"https://tally.so/r/3Xdprd"} className="flex items-center space-x-4 animate-fade-in-up-delay-2">
                 {/* Open Position Text */}
                 <span className="text-2xl font-bold text-green-500 hover:scale-105 transition-transform duration-300">
-                    Open position
+                    Open positions
                 </span>
                 
                 {/* Circular Icon */}
@@ -39,7 +40,7 @@ export default function JoinUs(){
                         />
                     </svg>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 }
