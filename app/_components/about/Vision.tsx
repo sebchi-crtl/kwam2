@@ -13,11 +13,11 @@ export default function Vision() {
                             
                             {/* Vision Content */}
                             <div className="relative z-10 h-full flex flex-col justify-center">
-                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8 animate-fade-in-up-delay">
-                                    Our Vision
+                                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 md:mb-8 animate-fade-in-up-delay">
+                                    The world&apos;s most trusted creator of digital products
                                 </h2>
                                 <p className="text-lg md:text-xl lg:text-2xl text-black leading-relaxed max-w-2xl animate-fade-in-up-delay-2">
-                                    To be the world&apos;s leading platform for event discovery and planning, fostering meaningful connections across every culture and community.
+                                Shaping industries, inspiring communities, and setting new standards in user experience.
                                 </p>
                             </div>
                         </div>

@@ -30,11 +30,14 @@ export default function WhoWeAre() {
                         <div className="w-16 h-1 bg-[#FD9717] mr-auto animate-fade-in-up-delay-2"></div>
                     </div>
                     <div className="text-black font-semibold capitalize text-5xl xl:text-7xl animate-fade-in-up-delay-3 hover:scale-105 transition-transform duration-300">
-                        lorem ipsum dolor sit amet ed  
+                        The geeks who turn research to revenue  
                     </div>
-                    <div className="text-neutral-500 font-medium text-xl mt-3 animate-fade-in-up-delay-4 hover:scale-[1.02] transition-transform duration-300">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <div className="text-neutral-500 font-light text-xl mt-3 animate-fade-in-up-delay-4 hover:scale-[1.02] transition-transform duration-300">
+                        KWAM2 is a product innovation studio, creating platforms that blend design,engineering, 
+                        technology, and impact. 
+                        Backed by our advanced R&D unit, we turn ambitious ideas into market-ready products. 
+                        Attend is our flagship launch - redefining event discovery - and the first of many game-changing 
+                        platforms in our pipeline
                     </div>
                     <div className="flex gap-6 items-start justify-start animate-fade-in-up-delay-5">
                         <LuChartNoAxesCombined className="text-8xl text-red-800 hover:scale-110 hover:text-red-700 transition-all duration-300" />
@@ -42,7 +45,8 @@ export default function WhoWeAre() {
                             <p className="font-semibold text-black text-xl">
                                 Industrial Growth
                             </p>
-                                Lorem ipsum dolor sit amet ed  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            Products to businesses - repeatable GTM, strong unit economics, and multiple revenue lines 
+                            from day one.
                         </div>
                     </div>
                 </div>
