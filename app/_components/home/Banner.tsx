@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Banner() {
   return (
     <div className="mx-auto">
-      <div className="flex justify-center mb-8">
+      {/* <div className="flex justify-center mb-8">
         <div className="border-2 border-orange-300 px-4 py-2 rounded-full font-normal text-base font-rubik tracking-widest hover:border-orange-500 hover:bg-orange-50 transition-all duration-300 transform hover:scale-105">
           Coming Soon
         </div>
-      </div>
+      </div> */}
       <section className="text-center max-w-4xl xl:max-w-5xl mx-auto px-6 mb-16 mt-16">
         <h1 className="text-5xl md:text-6xl xl:text-8xl font-semibold text-gray-900 mb-6 font-rubik animate-fade-in-up">
         Why predict the future

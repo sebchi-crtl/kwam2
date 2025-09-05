@@ -11,9 +11,9 @@ export default function Values() {
                 </h1>
                 
                 {/* Introduction */}
-                <p className="text-lg mb-12 text-gray-300 max-w-3xl animate-fade-in-up-delay">
+                {/* <p className="text-lg mb-12 text-gray-300 max-w-3xl animate-fade-in-up-delay">
                     We are a deeply mission driven company, and these are what we expect our team to emulate cause they are our core ideas we return to when making decisions
-                </p>
+                </p> */}
                 
                 {/* Values List with Continuous Timeline */}
                 <div className="relative">
@@ -30,7 +30,7 @@ export default function Values() {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
-                                    <span className="text-[#FD9717] text-4xl">k</span> - Kindness
+                                    <span className="text-[#FD9717] text-4xl">K</span> - Kindness
                                 </h3>
                                 <p className="text-gray-300">
                                     We lead with respect and generosity. Feedback is direct and constructive; ego and drama don’t 

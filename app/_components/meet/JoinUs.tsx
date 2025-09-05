@@ -9,7 +9,7 @@ export default function JoinUs(){
                     Come work with Us
                 </h1>
                 <p className="text-black max-w-3xl mt-3 animate-fade-in-up-delay">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Be part of something bold. Work with us to create meaningful change and grow your career.
                 </p>                
             </div>
             
