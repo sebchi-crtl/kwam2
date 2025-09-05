@@ -33,7 +33,8 @@ export default function Values() {
                                     <span className="text-[#FD9717] text-4xl">k</span> - Kindness
                                 </h3>
                                 <p className="text-gray-300">
-                                    Always be curious, keep learning, and share what you know. Every worker takes personal responsibility to keep growing in skills and industry awareness.
+                                    We lead with respect and generosity. Feedback is direct and constructive; ego and drama don’t 
+                                    exist in this organisation.
                                 </p>
                             </div>
                         </div>
@@ -45,10 +46,11 @@ export default function Values() {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold mb-2">
-                                    <span className="text-[#FD9717] text-4xl">W</span> - Willingness for Growth
+                                    <span className="text-[#FD9717] text-4xl">W</span> - Willingness
                                 </h3>
                                 <p className="text-gray-300">
-                                    Strong work ethic builds trust, ensures consistent results, and inspires others to give their best. We go the extra mile to ensure quality in everything we do
+                                    We&apos;re learners with a bias to action. We stretch, ask questions, seek feedback, and turn 
+                                    change into advantage.
                                 </p>
                             </div>
                         </div>
@@ -63,7 +65,8 @@ export default function Values() {
                                     <span className="text-[#FD9717] text-4xl">A</span> - Accountability
                                 </h3>
                                 <p className="text-gray-300">
-                                    If we make mistakes, we own them, fix them, and learn from them.
+                                    We own the outcome. We keep promises, measure results, and fix issues fast: no excuses, no 
+                                    blame.
                                 </p>
                             </div>
                         </div>
@@ -78,7 +81,8 @@ export default function Values() {
                                     <span className="text-[#FD9717] text-4xl">M</span> - Mastery
                                 </h3>
                                 <p className="text-gray-300">
-                                    We commit to doing our work with excellence, not just completion. We continuously refine our skills to become masters in our roles.
+                                    We sweat the details. We document, test, and continually sharpen our craft to deliver 
+                                    world-class work.
                                 </p>
                             </div>
                         </div>
@@ -93,7 +97,8 @@ export default function Values() {
                                     <span className="text-[#FD9717] text-4xl">2</span> - 2getherness
                                 </h3>
                                 <p className="text-gray-300">
-                                    We collaborate instead of competing internally. We remember that no one succeeds alone – we grow stronger together.
+                                    We win as one TEAM. We share context, celebrate others, and prioritise collective success 
+                                    over internal competition.
                                 </p>
                             </div>
                         </div>
