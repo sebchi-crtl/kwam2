@@ -13,13 +13,14 @@ export default function Vision() {
                             
                             {/* Vision Content */}
                             <div className="relative z-10 h-full flex flex-col justify-center">
-                                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 md:mb-8 animate-fade-in-up-delay">
+                                <h2 className="flex flex-col text-xl md:text-2xl lg:text-3xl font-bold text-black mb-3 md:mb-5 animate-fade-in-up-delay">
                                     Our Vision
+                                    
+                                    <span className="font-sbold text-xl">
+                                    To be the world&apos;s most trusted creator of digital products
+                                    </span>
                                 </h2>
-                                <h4 className="font-bold">
-                                  To be the world&apos;s most trusted creator of digital products”
-                                </h4>
-                                <p className="text-lg md:text-xl lg:text-2xl text-black leading-relaxed max-w-2xl animate-fade-in-up-delay-2">
+                                <p className="text-lg md:text-xl lg:text-2xl  text-black leading-relaxed max-w-2xl animate-fade-in-up-delay-2">
                                 Shaping industries, inspiring communities, and setting new standards in user experience.
                                 </p>
                             </div>
