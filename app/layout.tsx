@@ -41,7 +41,7 @@ export default function RootLayout({
       >
         <div className="min-h-screen bg-white mt-5">
           <Navbar />
-          <main className="pt-16">
+          <main className="pt-6">
             {children}
             <Footer />
           </main>
