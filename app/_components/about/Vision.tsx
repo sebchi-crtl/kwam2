@@ -13,7 +13,7 @@ export default function Vision() {
                             
                             {/* Vision Content */}
                             <div className="relative z-10 h-full flex flex-col justify-center">
-                                <h2 className="flex flex-col text-xl md:text-2xl lg:text-3xl font-bold text-black mb-3 md:mb-5 animate-fade-in-up-delay">
+                                <h2 className="flex flex-col text-xl md:text-2xl lg:text-3xl font-bold text-black  animate-fade-in-up-delay">
                                     Our Vision
                                     
                                     <span className="font-sbold text-xl">
