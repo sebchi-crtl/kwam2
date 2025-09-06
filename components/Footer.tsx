@@ -20,8 +20,8 @@ const Footer = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 min-md:place-items-center'>
             {/* Company Branding */}
             <div className='lg:col-span-1'>
-                <Image src="/kwam2.svg" alt="logo" width={250} height={250} />
-                <Image src="/color.svg" alt="logo" width={150} height={150} />
+                <Image src="/kwam2.svg" alt="logo" width={200} height={200} />
+                <Image src="/color.svg" alt="logo" width={120} height={120} />
             </div>
 
             {/* Contact Information - Phone */}
