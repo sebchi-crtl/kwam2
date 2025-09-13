@@ -20,17 +20,17 @@ const Portfolio = () => {
     {
       id: 3,
       logo: '/image/inc.svg',
-      name: 'INC'
+      name: 'International Nigerian Community'
     },
     {
       id: 4,
       logo: '/image/narrow.svg',
-      name: 'NarrowGate'
+      name: 'Narrow Gate'
     },
     {
       id: 5,
       logo: '/image/fco.svg',
-      name: 'F CO'
+      name: 'Frosted & Co'
     },
     {
       id: 6,
@@ -119,7 +119,7 @@ const Portfolio = () => {
                     opacity
                   }}
                 >
-                <div className={`w-[400px] h-[320px] rounded-3xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 ${
+                <div className={`w-[400px] h-[380px] rounded-3xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 ${
                   isActive ? 'bg-orange-500' : 'bg-gray-100 border border-orange-200'
                 }`}>
                 {/* Price Tag */}
@@ -127,21 +127,21 @@ const Portfolio = () => {
                   {item.price}
                 </div> */}
                     
-                                         {/* Logo/Image */}
-                     <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                       <Image 
-                         src={item.logo} 
-                         alt={item.name}
-                         width={128}
-                         height={128}
-                         className="w-full h-full object-contain"
-                       />
-                     </div>
-                    
-                                         {/* Name */}
-                     <span className={`text-2xl font-semibold ${isActive ? 'text-white' : 'text-black'}`}>
-                       {item.name}
-                     </span>
+                  {/* Logo/Image */}
+                  <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                    <Image 
+                      src={item.logo} 
+                      alt={item.name}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                      
+                  {/* Name */}
+                  <span className={`text-2xl flex justify-center items-center font-semibold ${isActive ? 'text-white max-md:text-sm' : 'text-black'}`}>
+                    {item.name}
+                  </span>
                   </div>
                 </div>
               )
