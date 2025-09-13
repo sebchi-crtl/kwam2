@@ -9,52 +9,38 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      logo: '/image/logo1.png',
-      name: 'LuWa',
-      price: '$15',
-      rating: 4
+      logo: '/image/nig.svg',
+      name: 'NIG'
     },
     {
       id: 2,
-      logo: '/image/logo2.png',
-      name: 'Fruitea',
-      price: '$18',
-      rating: 5
+      logo: '/image/fruitea.svg',
+      name: 'Fruitea'
     },
     {
       id: 3,
-      logo: '/image/logo3.png',
-      name: 'INC',
-      price: '$20',
-      rating: 4
+      logo: '/image/inc.svg',
+      name: 'INC'
     },
     {
       id: 4,
-      logo: '/image/logo1.png',
-      name: 'NarrowGate',
-      price: '$16',
-      rating: 3
+      logo: '/image/narrow.svg',
+      name: 'NarrowGate'
     },
     {
       id: 5,
-      logo: '/image/logo2.png',
-      name: 'LivDe',
-      price: '$22',
-      rating: 5
+      logo: '/image/fco.svg',
+      name: 'F CO'
     },
     {
       id: 6,
-      logo: '/image/tofg.jpeg',
-      name: 'TOFG',
-      price: '$22',
-      rating: 5
+      logo: '/image/tofg.svg',
+      name: 'TOFG'
     },
     {
       id: 7,
       logo: '/image/landing/Icon-black.svg',
-      name: 'Attend',
-      price: '$22',
-      rating: 5
+      name: 'Attend'
     }
   ]
 

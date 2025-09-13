@@ -96,11 +96,11 @@ export default function Navbar() {
               <SheetHeader>
                 <SheetTitle>
                   <Link href="/" className="flex items-center space-x-1">
-                    <Image src="/image/landing/Logo.svg" className="w-32 h-16 object-contain" alt="logo" width={100} height={100} />
+                    <Image src="/kwam2.svg" className="w-32 h-16 object-contain" alt="logo" width={100} height={100} />
                   </Link>
                 </SheetTitle>
               </SheetHeader>
-                          <div className="flex flex-col gap-6 mt-8">
+              <div className="flex flex-col gap-6 mt-8">
                 <div className="space-y-4">
                   {menuItems.map((item) => (
                     <Link
