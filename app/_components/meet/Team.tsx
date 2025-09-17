@@ -33,7 +33,8 @@ export default function Team() {
         {
           name: "Inioluwa Adewara",
           title: "FullStack Developer",
-          image: "/image/meet/inioluwa.jpg"
+          image: "/image/meet/inioluwa.jpg",
+          height: " h-50 "
         },
         {
           name: "Rahul",
