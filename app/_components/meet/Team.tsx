@@ -25,7 +25,7 @@ export default function Team() {
           image: "/image/meet/ife.jpg"
         },
         {
-          name: "Ayo",
+          name: "Olowoleru Ayobami Oghenevwede",
           title: "Backend Engineer",
           image: "/image/meet/ayo.jpg",
           height: " h-49 "
