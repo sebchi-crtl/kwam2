@@ -1,26 +1,44 @@
+import Image from "next/image";
 
 export default function Team() {
 
     const teamMembers: TeamMember[] = [
         {
-          name: "EMMA RODRIGUEZ",
-          title: "Yoga and Flexibility Instructor",
+          name: "Kwam",
+          title: "ceo",
           image: "/image/team/emma.jpg"
         },
         {
-          name: "MAYA LEE",
-          title: "Nutrition Specialist",
-          image: "/image/team/maya.jpg"
+          name: "Olivia Adepegba",
+          title: "Chief of Governance & Compliance",
+          image: "/image/meet/olivia.jpg",
+          height: " h-60 "
         },
         {
-          name: "JORDAN SMITH",
-          title: "Cardio Coach",
+          name: "Sebastine Nwobodo",
+          title: "Executive Director",
           image: "/image/team/jordan.jpg"
         },
         {
-          name: "ALEX CARTER",
-          title: "Head Trainer",
-          image: "/image/team/alex.jpg"
+          name: "Eze Ifeoma Gloria",
+          title: "Quality Assurance",
+          image: "/image/meet/ife.jpg"
+        },
+        {
+          name: "Ayo",
+          title: "Backend Engineer",
+          image: "/image/meet/ayo.jpg",
+          height: " h-49 "
+        },
+        {
+          name: "Inioluwa Adewara",
+          title: "FullStack Developer",
+          image: "/image/meet/inioluwa.jpg"
+        },
+        {
+          name: "Rahul",
+          title: "Ui/Ux",
+          image: "/image/meet/rahul.jpg",
         }
     ];
 
@@ -33,13 +51,13 @@ export default function Team() {
         // { member: teamMembers[0], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Emma (green) - lower
         
         // Row 2
-        { member: teamMembers[1], color: "green", offset: "translate-y-0" }, // Maya (orange) - top
-        { member: teamMembers[3], color: "orange", offset: "translate-y-0 lg:translate-y-16" },  // Alex (green) - lower
-        { member: teamMembers[3], color: "green", offset: "translate-y-0" }, // Alex (orange) - top
+        { member: teamMembers[3], color: "green", offset: "translate-y-0" }, // Maya (orange) - top
+        { member: teamMembers[4], color: "orange", offset: "translate-y-0 lg:translate-y-16" },  // Alex (green) - lower
+        { member: teamMembers[5], color: "green", offset: "translate-y-0" }, // Alex (orange) - top
         // { member: teamMembers[1], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Maya (green) - lower
         
         // Row 3
-        // { member: teamMembers[0], color: "orange", offset: "translate-y-0" }, // Emma (orange) - top
+        { member: teamMembers[6], color: "orange", offset: "translate-y-0" }, // Emma (orange) - top
         // { member: teamMembers[3], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Alex (green) - lower
         // { member: teamMembers[2], color: "orange", offset: "translate-y-0" }, // Jordan (orange) - top
         // { member: teamMembers[2], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Jordan (green) - lower
@@ -70,8 +88,8 @@ export default function Team() {
                         {/* Profile Image */}
                         <div className='w-44 h-44 rounded-full mb-12 overflow-hidden '>
                             <div className='w-full h-full bg-gradient-to-br from-orange-200 to-green-200 flex items-center justify-center'>
-                            <span className='text-2xl font-bold text-gray-600'>
-                                {item.member.name.split(' ').map((n: string) => n[0]).join('')}
+                            <span className='text-2xl font-bold text-gray-600 w-54 h-54 '>
+                                <Image src={item.member.image} className={`w-48 ${item.member.height}`} width={100} height={100} alt="" />
                             </span>
                             </div>
                         </div>
