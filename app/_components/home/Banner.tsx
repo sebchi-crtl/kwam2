@@ -1,6 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Banner() {
+  const [isDesktopImageLoaded, setIsDesktopImageLoaded] = useState(false);
+  const [isMobileImageLoaded, setIsMobileImageLoaded] = useState(false);
+
   return (
     <div className="mx-auto">
       {/* <div className="flex justify-center mb-8">
@@ -19,8 +25,39 @@ export default function Banner() {
         </div>
       </section>
       <div className="flex justify-center w-full animate-fade-in-up-delay-2">
-        <Image src="/image/landing/banner_hero.svg" className="w-full h-full object-cover max-md:hidden hover:scale-105 transition-transform duration-700" alt="banner" width={1000} height={1000} />
-        <Image src="/image/landing/banner_hero_mobile.svg" className="w-full h-full object-cover max-md:block hidden hover:scale-105 transition-transform duration-700" alt="banner" width={1000} height={1000} />
+        {/* Desktop Image with Skeleton */}
+        <div className="relative w-full max-md:hidden">
+          {!isDesktopImageLoaded && (
+            <div className="absolute inset-0 animate-pulse">
+              <div className="w-full h-64 md:h-96 bg-gray-300 rounded-lg"></div>
+            </div>
+          )}
+          <Image 
+            src="/image/landing/banner_hero.svg" 
+            className={`w-full h-full object-cover hover:scale-105 transition-transform duration-700 ${isDesktopImageLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+            alt="banner" 
+            width={1000} 
+            height={1000}
+            onLoad={() => setIsDesktopImageLoaded(true)}
+          />
+        </div>
+
+        {/* Mobile Image with Skeleton */}
+        <div className="relative w-full max-md:block hidden">
+          {!isMobileImageLoaded && (
+            <div className="absolute inset-0 animate-pulse">
+              <div className="w-full h-64 bg-gray-300 rounded-lg"></div>
+            </div>
+          )}
+          <Image 
+            src="/image/landing/banner_hero_mobile.svg" 
+            className={`w-full h-full object-cover hover:scale-105 transition-transform duration-700 ${isMobileImageLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+            alt="banner" 
+            width={1000} 
+            height={1000}
+            onLoad={() => setIsMobileImageLoaded(true)}
+          />
+        </div>
       </div>
     </div>
   );
