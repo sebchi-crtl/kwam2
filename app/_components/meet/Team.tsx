@@ -64,12 +64,12 @@ export default function Team() {
         // { member: teamMembers[2], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Jordan (green) - lower
     ];
     return(
-        <div className='w-full h-full mx-auto'>
+        <div className='w-full h-full mx-auto bg-background text-foreground'>
             <section className=' max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32'>
-                <h1 className='text-4xl md:text-45l xl:text-6xl font-semibold text-black mb-6 font-rubik flex flex-col text-center uppercase'>
+                <h1 className='text-4xl md:text-45l xl:text-6xl font-semibold text-foreground mb-6 font-rubik flex flex-col text-center uppercase'>
                 Meet The Team
                 <span className='text-black/40 font-light text-xl xl:text-2xl font-rubik mt-4 normal-case'>
-                    The people behind our success
+                    <span className='text-muted-foreground'>The people behind our success</span>
                 </span>
                 </h1>
                 
@@ -81,28 +81,28 @@ export default function Team() {
                         key={`${item.member.name}-${index}`}
                         className={`${item.offset}  rounded-2xl p-12 shadow-none border-0 transition-all duration-300 hover:scale-105 ${
                         item.color === 'orange'
-                            ? ' bg-[#FD9717]/40' 
-                            : ' bg-[#D7F8B9]/40'
+                            ? ' bg-secondary' 
+                            : ' bg-card'
                         }`}
                     >
                         <div className='flex flex-col items-center text-center py-12'>
                         {/* Profile Image */}
                         <div className='w-44 h-44 rounded-full mb-12 overflow-hidden '>
-                            <div className='w-full h-full bg-gradient-to-br from-orange-200 to-green-200 flex items-center justify-center'>
-                            <span className='text-2xl font-bold text-gray-600 w-54 h-54 '>
+                            <div className='w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center'>
+                                <span className='text-2xl font-bold text-muted-foreground w-54 h-54 '>
                                 <Image src={item.member.image} className={`w-48 ${item.member.height}`} width={100} height={100} alt="" />
                             </span>
                             </div>
                         </div>
                         
-                        <div className='bg-white rounded-md py-1 px-3'>
+                        <div className='bg-card text-card-foreground rounded-md py-1 px-3'>
                             {/* Name */}
-                            <h3 className='font-bold text-lg text-gray-800 mb-2'>
+                            <h3 className='font-bold text-lg text-foreground mb-2'>
                             {item.member.name}
                             </h3>
                             
                             {/* Title */}
-                            <p className='text-sm text-gray-600 leading-relaxed'>
+                            <p className='text-sm text-muted-foreground leading-relaxed'>
                             {item.member.title}
                             </p>
                         </div>

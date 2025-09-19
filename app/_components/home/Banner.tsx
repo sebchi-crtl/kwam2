@@ -8,17 +8,17 @@ export default function Banner() {
   const [isMobileImageLoaded, setIsMobileImageLoaded] = useState(false);
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-background text-foreground">
       {/* <div className="flex justify-center mb-8">
         <div className="border-2 border-orange-300 px-4 py-2 rounded-full font-normal text-base font-rubik tracking-widest hover:border-orange-500 hover:bg-orange-50 transition-all duration-300 transform hover:scale-105">
           Coming Soon
         </div>
       </div> */}
       <section className="text-center max-w-4xl xl:max-w-5xl mx-auto px-6 mb-16 mt-16">
-        <h1 className="text-5xl md:text-6xl xl:text-8xl font-semibold text-gray-900 mb-6 font-rubik animate-fade-in-up">
+        <h1 className="text-5xl md:text-6xl xl:text-8xl font-semibold text-foreground mb-6 font-rubik animate-fade-in-up">
         Why predict the future
         </h1>
-        <div className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto font-rubik animate-fade-in-up-delay">
+        <div className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-rubik animate-fade-in-up-delay">
           <p className="mb-4">
           when we can build it?
           </p>

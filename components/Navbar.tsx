@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -18,6 +18,7 @@ import {
 export default function Navbar() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   // Handle scroll effect
   useEffect(() => {
@@ -27,6 +28,36 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Initialize theme from localStorage and apply to <html>
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      const initial: "light" | "dark" = saved === 'dark' || saved === 'light'
+        ? (saved as "light" | "dark")
+        : 'dark';
+      setTheme(initial);
+      const root = document.documentElement;
+      if (initial === 'dark') {
+        root.classList.add('dark');
+      } else {
+        root.classList.remove('dark');
+      }
+    } catch {}
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme((prev) => {
+      const next = prev === 'dark' ? 'light' : 'dark';
+      try {
+        localStorage.setItem('theme', next);
+      } catch {}
+      const root = document.documentElement;
+      if (next === 'dark') root.classList.add('dark');
+      else root.classList.remove('dark');
+      return next;
+    });
+  };
 
   const menuItems = [
     { title: "Home", url: "/" },
@@ -43,7 +74,7 @@ export default function Navbar() {
   return (
     <nav 
       className={`w-full sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="w-full px-6 py-4 flex items-center justify-between max-w-[90rem] mx-auto">
@@ -60,8 +91,8 @@ export default function Navbar() {
             <Link
               key={item.title}
               href={item.url}
-              className={`font-rubik text-lg font-medium transition-colors hover:text-orange-500 ${
-                pathname === item.url ? "text-orange-500" : "text-gray-600"
+              className={`font-rubik text-lg font-medium transition-colors hover:text-primary ${
+                pathname === item.url ? "text-foreground" : "text-muted-foreground"
               }`}
             >
               {item.title}
@@ -69,10 +100,21 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop Contact Button */}
-        <div className="hidden lg:flex items-center">
+        {/* Desktop Contact Button + Theme Toggle */}
+        <div className="hidden lg:flex items-center gap-3">
+          <Button
+            onClick={toggleTheme}
+            variant="outline"
+            className="border-border text-foreground hover:bg-secondary"
+          >
+            {theme === 'dark' ? (
+              <div className="flex items-center gap-2"><Sun className="h-4 w-4" /> Light</div>
+            ) : (
+              <div className="flex items-center gap-2"><Moon className="h-4 w-4" /> Dark</div>
+            )}
+          </Button>
           <Button 
-            className="bg-orange-400 hover:bg-orange-600 text-white font-normal px-6 py-2 rounded-full text-lg transition-all duration-300 font-rubik hover:scale-105"
+            className="bg-primary hover:opacity-90 text-primary-foreground font-normal px-6 py-2 rounded-full text-lg transition-all duration-300 font-rubik hover:scale-105"
           >
             Contact Us
           </Button>
@@ -86,7 +128,7 @@ export default function Navbar() {
                 variant="outline" 
                 size="icon"
                 className={`border-0 hover:bg-transparent ${
-                  isScrolled ? 'text-gray-600' : 'text-green-500'
+                  isScrolled ? 'text-muted-foreground' : 'text-foreground'
                 }`}
               >
                 <Menu className="h-6 w-6" />
@@ -107,7 +149,7 @@ export default function Navbar() {
                       key={item.title}
                       href={item.url}
                       className={`block py-3 text-lg font-rubik font-medium transition-colors ${
-                        pathname === item.url ? "text-orange-500" : "text-gray-600 hover:text-orange-500"
+                        pathname === item.url ? "text-foreground" : "text-muted-foreground hover:text-primary"
                       }`}
                     >
                       {item.title}
@@ -116,8 +158,21 @@ export default function Navbar() {
                 </div>
                 
                 <div className="pt-4 border-t">
+                  <div className="mb-4">
+                    <Button
+                      onClick={toggleTheme}
+                      variant="outline"
+                      className="w-full border-border text-foreground hover:bg-secondary"
+                    >
+                      {theme === 'dark' ? (
+                        <div className="flex items-center gap-2 justify-center"><Sun className="h-4 w-4" /> Light</div>
+                      ) : (
+                        <div className="flex items-center gap-2 justify-center"><Moon className="h-4 w-4" /> Dark</div>
+                      )}
+                    </Button>
+                  </div>
                   <Button 
-                    className="w-full bg-orange-400 hover:bg-orange-600 text-white font-normal py-3 rounded-full text-lg transition-colors font-rubik"
+                    className="w-full bg-primary hover:opacity-90 text-primary-foreground font-normal py-3 rounded-full text-lg transition-colors font-rubik"
                   >
                     Contact Us
                   </Button>

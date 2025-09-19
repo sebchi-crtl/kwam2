@@ -3,23 +3,23 @@ import { Card, CardTitle, CardHeader, CardContent } from "../../../components/ui
 
 export default function Feature() {
   return (
-    <div className="bg-black w-full h-full min-md:rounded-t-[9rem] mx-auto">
+    <div className="bg-background w-full h-full min-md:rounded-t-[9rem] mx-auto">
       <section className="text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32">
-        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-orange-400 mb-6 font-rubik flex flex-col animate-fade-in-up">
+        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-foreground mb-6 font-rubik flex flex-col animate-fade-in-up">
           Featured Projects
-          <span className="text-white font-light text-xl xl:text-2xl animate-fade-in-up-delay">
+          <span className="text-muted-foreground font-light text-xl xl:text-2xl animate-fade-in-up-delay">
             A glimpse of attend
           </span>
         </h1>
         <div className="text-lg md:text-xl text-gray-600 leading-relaxed mt-12 mx-auto font-rubik">
-          <Card className="bg-white border-0 shadow-none relative px-4 xl:px-10 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-2">
+          <Card className="bg-card text-card-foreground border-0 shadow-none relative px-4 xl:px-10 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-2">
             <CardHeader>
               <CardTitle className="flex justify-start items-start">
                 <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4 text-left text-black w-full xl:max-w-3xl 3xl:max-w-4xl text-2xl xl:text-3xl 3xl:text-[2.3rem] font-light">
+              <p className="mb-4 text-left text-foreground w-full xl:max-w-3xl 3xl:max-w-4xl text-2xl xl:text-3xl 3xl:text-[2.3rem] font-light">
                 Attend is your all-in-one social experience — from discovering the hottest shows and nights out 
                 to capturing the moments that matter. Whether it’s a wedding, party,  festival, or a livestream; 
                 Attend keeps you connected before, during, and after the event.
@@ -35,14 +35,14 @@ export default function Feature() {
             </CardContent>
           </Card>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-5 mt-16">
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-3">
+            <Card className="bg-card text-card-foreground border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-3">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[18rem]">Safe and Secure Login</p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[16.5rem]">
+                <p className="mb-4 text-left text-foreground w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[16.5rem]">
                   No more complicated passwords! Your privacy matters. Attend uses one-time 
                   passcodes to keep your account safe. Log in instantly using your email or social 
                   account: no hassle, no risks.
@@ -52,14 +52,14 @@ export default function Feature() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-4">
+            <Card className="bg-card text-card-foreground border-0 shadow-none relative 3xl:px-5 overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-4">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">Stress-free booking and event planning</p>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[17rem]">
+                <p className="mb-4 text-left text-foreground w-full text-lg xl:text-xl 3xl:text-3xl font-light max-w-[17rem]">
                   From RSVPs to tickets and up to full-scale event coordination, Attend makes 
                   planning effortless. Browse, book, and manage events in a few taps, all while 
                   keeping your guests informed and engaged.
@@ -69,7 +69,7 @@ export default function Feature() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="bg-white border-0 shadow-none overflow-hidden 3xl:px-5 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-5">
+            <Card className="bg-card text-card-foreground border-0 shadow-none overflow-hidden 3xl:px-5 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-5">
               <CardHeader>
                 <CardTitle className="flex justify-start items-start">
                   <p className="text-2xl xl:text-3xl 3xl:text-4xl font-semibold max-w-[20rem]">
@@ -78,7 +78,7 @@ export default function Feature() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-left text-black w-full text-lg xl:text-xl 3xl:text-3xl font-light">
+                <p className="mb-4 text-left text-foreground w-full text-lg xl:text-xl 3xl:text-3xl font-light">
                   Sell tickets, collect payments, and manage subscriptions directly in the app. 
                   Whether you’re a promoter, artist, or venue, Attend gives you the tools to get paid 
                   instantly and securely. 

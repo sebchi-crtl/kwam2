@@ -57,12 +57,12 @@ const Portfolio = () => {
   }
 
   return (
-    <div className='bg-white w-full h-full min-md:rounded-t-[9rem] mx-auto'>
+    <div className='bg-background w-full h-full min-md:rounded-t-[9rem] mx-auto'>
       <section className='text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-16 mt-32'>
         
-        <h1 className='text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-orange-500 mb-6 font-rubik flex flex-col gap-6'>
+        <h1 className='text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-foreground mb-6 font-rubik flex flex-col gap-6'>
           Portfolio
-          <span className='text-black/40 font-semibold text-xl xl:text-3xl font-rubik '>
+          <span className='text-muted-foreground font-semibold text-xl xl:text-3xl font-rubik '>
             Become a Partner Today- and Invest in the Future
           </span>
         </h1>
@@ -120,7 +120,7 @@ const Portfolio = () => {
                   }}
                 >
                 <div className={`w-[400px] h-[380px] rounded-3xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 ${
-                  isActive ? 'bg-orange-500' : 'bg-gray-100 border border-orange-200'
+                  isActive ? 'bg-primary text-primary-foreground' : 'bg-card text-card-foreground border border-border'
                 }`}>
                 {/* Price Tag */}
                 {/* <div className="absolute top-4 right-4 bg-white text-black px-3 py-2 rounded-full text-lg font-semibold">
@@ -139,7 +139,7 @@ const Portfolio = () => {
                   </div>
                       
                   {/* Name */}
-                  <span className={`text-2xl flex justify-center items-center font-semibold ${isActive ? 'text-white max-md:text-sm' : 'text-black'}`}>
+                  <span className={`text-2xl flex justify-center items-center font-semibold ${isActive ? 'max-md:text-sm' : ''}`}>
                     {item.name}
                   </span>
                   </div>
@@ -160,13 +160,13 @@ const Portfolio = () => {
              </button>
             
                          {/* Pagination Dots */}
-             <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
                {portfolioItems.map((_, index) => (
                  <button
                    key={index}
                    onClick={() => goToSlide(index)}
-                   className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                     index === currentIndex ? 'bg-orange-500 scale-125' : 'bg-gray-300'
+                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                    index === currentIndex ? 'bg-primary scale-125' : 'bg-muted'
                    }`}
                  />
                ))}

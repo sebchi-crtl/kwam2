@@ -35,11 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} antialiased`}
       >
-        <div className="min-h-screen bg-white mt-5">
+        <div className="min-h-screen bg-background text-foreground mt-5">
           <Navbar />
           <main className="pt-6">
             {children}
