@@ -6,10 +6,10 @@ const Footer = () => {
     <div className='w-full bg-background text-foreground'>
       {/* Partner Section */}
       <section className='text-center max-w-[120rem] mx-auto px-8 xl:px-24 py-16 2xl:py-44'>
-        <h2 className='text-4xl md:text-5xl xl:text-[8rem] font-semibold text-neutral-800 mb-8 font-rubik'>
+        <h2 className='text-4xl dark:text-white/70 md:text-5xl xl:text-[8rem] font-semibold text-neutral-800 mb-8 font-rubik'>
           Become <br /> a partner?
         </h2>
-        <button className='px-8 py-3 text-2xl lg:text-4xl border-2 border-neutral-300 rounded-full text-neutral-700 font-light hover:bg-neutral-50 transition-colors font-rubik'>
+        <button className='px-8 py-3 text-2xl  border border-green-600 lg:text-4xl rounded-full text-neutral-700 font-light hover:bg-neutral-50 transition-colors font-rubik'>
           Email Us
         </button>
       </section>

@@ -30,12 +30,14 @@ const Portfolio = () => {
     {
       id: 5,
       logo: '/image/fco.svg',
-      name: 'Frosted & Co'
+      name: 'Frosted & Co',
+      size: 'w-24 h-30'
     },
     {
       id: 6,
       logo: '/image/tofg.svg',
-      name: 'TOFG'
+      name: 'TOFG',
+      size: 'w-50 h-45'
     },
     {
       id: 7,
@@ -57,7 +59,7 @@ const Portfolio = () => {
   }
 
   return (
-    <div className='bg-background w-full h-full min-md:rounded-t-[9rem] mx-auto'>
+    <div className='bg-white dark:bg-[#0f0f0f] w-full h-full min-md:rounded-t-[9rem] mx-auto'>
       <section className='text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-16 mt-32'>
         
         <h1 className='text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-foreground mb-6 font-rubik flex flex-col gap-6'>
@@ -128,7 +130,7 @@ const Portfolio = () => {
                 </div> */}
                     
                   {/* Logo/Image */}
-                  <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                  <div className={` ${item.size ? item.size : 'w-32 h-32'}  mx-auto mb-6 flex items-center justify-center`}>
                     <Image 
                       src={item.logo} 
                       alt={item.name}
@@ -152,7 +154,7 @@ const Portfolio = () => {
            <div className="flex items-center justify-center gap-6 mt-12">
              <button
                onClick={prevSlide}
-               className="w-16 h-16 bg-gray-100 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
+               className="w-16 h-16 bg-gray-100 border border-orange-600 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
              >
                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -165,16 +167,16 @@ const Portfolio = () => {
                  <button
                    key={index}
                    onClick={() => goToSlide(index)}
-                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                  className={`w-4 h-4 rounded-full border border-green-200 transition-all duration-300 ${
                     index === currentIndex ? 'bg-primary scale-125' : 'bg-muted'
                    }`}
                  />
                ))}
              </div>
             
-                         <button
+              <button
                onClick={nextSlide}
-               className="w-16 h-16 bg-gray-100 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
+               className="w-16 h-16  border border-orange-600 bg-gray-100 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-50 transition-colors"
              >
                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

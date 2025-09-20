@@ -3,9 +3,9 @@ import { Card, CardTitle, CardHeader, CardContent } from "../../../components/ui
 
 export default function Feature() {
   return (
-    <div className="bg-background w-full h-full min-md:rounded-t-[9rem] mx-auto">
+    <div className="bg-black dark:bg-white  w-full h-full min-md:rounded-t-[9rem] mx-auto">
       <section className="text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32">
-        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold text-foreground mb-6 font-rubik flex flex-col animate-fade-in-up">
+        <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold dark:text-black text-white mb-6 font-rubik flex flex-col animate-fade-in-up">
           Featured Projects
           <span className="text-muted-foreground font-light text-xl xl:text-2xl animate-fade-in-up-delay">
             A glimpse of attend

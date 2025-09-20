@@ -10,7 +10,7 @@ export default function Home() {
     <div className="">
       <Banner />
       <Hero />
-      <div className="flex flex-col justify-center mt-6 bg-black min-md:rounded-t-[9rem]">
+      <div className="flex flex-col justify-center mt-6 bg-black dark:bg-white min-md:rounded-t-[9rem]">
         <Feature />
         <Portfolio />
       </div>

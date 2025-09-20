@@ -12,7 +12,7 @@ export default function Team() {
           name: "Olivia Adepegba",
           title: "Chief of Governance & Compliance",
           image: "/image/meet/olivia.jpg",
-          height: " h-60 "
+          height: " h-70 "
         },
         {
           name: "Sebastine Nwobodo",
