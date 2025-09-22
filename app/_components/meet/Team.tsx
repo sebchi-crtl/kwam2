@@ -4,41 +4,37 @@ export default function Team() {
 
     const teamMembers: TeamMember[] = [
         {
-          name: "Kwam",
-          title: "ceo",
-          image: "/image/team/emma.jpg"
-        },
-        {
-          name: "Olivia Adepegba",
+          name: "Olivia",
           title: "Chief of Governance & Compliance",
-          image: "/image/meet/olivia.jpg",
-          height: " h-70 "
+          image: "/image/meet/olivias.jpg",
+          postion: "-mt-48",
+          // height: "h-98 "
         },
         {
-          name: "Sebastine Nwobodo",
+          name: "Sebastine",
           title: "Executive Director",
           image: "/image/team/jordan.jpg"
         },
         {
-          name: "Eze Ifeoma Gloria",
-          title: "Quality Assurance",
+          name: "Ifeoma",
+          title: "Quality Assurance Lead",
           image: "/image/meet/ife.jpg"
         },
         {
-          name: "Olowoleru Ayobami Oghenevwede",
+          name: "Ayobami",
           title: "Backend Engineer",
           image: "/image/meet/ayo.jpg",
           height: " h-49 "
         },
         {
-          name: "Inioluwa Adewara",
+          name: "Inioluwa",
           title: "FullStack Developer",
           image: "/image/meet/inioluwa.jpg",
           height: " h-50 "
         },
         {
           name: "Rahul",
-          title: "Ui/Ux",
+          title: "UI/UX Designer",
           image: "/image/meet/rahul.jpg",
         }
     ];
@@ -58,7 +54,7 @@ export default function Team() {
         // { member: teamMembers[1], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Maya (green) - lower
         
         // Row 3
-        { member: teamMembers[6], color: "orange", offset: "translate-y-0" }, // Emma (orange) - top
+        // { member: teamMembers[6], color: "orange", offset: "translate-y-0" }, // Emma (orange) - top
         // { member: teamMembers[3], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Alex (green) - lower
         // { member: teamMembers[2], color: "orange", offset: "translate-y-0" }, // Jordan (orange) - top
         // { member: teamMembers[2], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Jordan (green) - lower
@@ -89,13 +85,18 @@ export default function Team() {
                         {/* Profile Image */}
                         <div className='w-44 h-44 rounded-full mb-12 overflow-hidden '>
                             <div className='w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center'>
-                                <span className='text-2xl font-bold text-muted-foreground w-54 h-54 '>
-                                <Image src={item.member.image} className={`w-48 ${item.member.height}`} width={100} height={100} alt="" />
+                              <span className={`text-2xl font-bold text-muted-foreground w-54 h-54 ${item.member.postion}`}>
+                              <Image src={item.member.image} className={`w-full ${item.member.height}`} width={100} height={100} alt="" />
                             </span>
                             </div>
                         </div>
                         
-                        <div className='bg-card text-card-foreground rounded-md py-1 px-3'>
+                        <div className={` text-card-foreground rounded-md py-1 px-3 ${
+                           item.color === 'green'
+                            ? ' bg-secondary' 
+                            : ' bg-card'
+                          }`}  
+                        >
                             {/* Name */}
                             <h3 className='font-bold text-lg text-foreground mb-2'>
                             {item.member.name}

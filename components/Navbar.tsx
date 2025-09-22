@@ -113,11 +113,11 @@ export default function Navbar() {
               <div className="flex items-center gap-2"><Moon className="h-4 w-4" /> Dark</div>
             )}
           </Button>
-          <Button 
+          {/* <Button 
             className="bg-primary hover:opacity-90 text-primary-foreground font-normal px-6 py-2 rounded-full text-lg transition-all duration-300 font-rubik hover:scale-105"
           >
             Contact Us
-          </Button>
+          </Button> */}
         </div>
 
         {/* Mobile Menu */}
@@ -171,11 +171,11 @@ export default function Navbar() {
                       )}
                     </Button>
                   </div>
-                  <Button 
+                  {/* <Button 
                     className="w-full bg-primary hover:opacity-90 text-primary-foreground font-normal py-3 rounded-full text-lg transition-colors font-rubik"
                   >
                     Contact Us
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </SheetContent>

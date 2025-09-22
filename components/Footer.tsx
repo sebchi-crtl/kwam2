@@ -17,7 +17,7 @@ const Footer = () => {
       {/* Footer Section */}
       <footer className='bg-background border-t border-border'>
         <div className='max-w-[120rem] mx-auto px-8 xl:px-24 py-12'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 min-md:place-items-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 min-md:place-items-center'>
             {/* Company Branding */}
             <div className='lg:col-span-1'>
                 <Image src="/kwam2.svg" alt="logo" width={200} height={200} />
@@ -30,19 +30,19 @@ const Footer = () => {
                 +23 65 789 04
               </div>
               <p className='text-muted-foreground lg:text-lg'>
-                MAIN OFFICE 901 N Pit Street Alexandria VA, 22314
+                17 Fort Pitt Street, Medway, ME4 6SX
               </p>
             </div>
 
             {/* Contact Information - Email */}
-            <div className='lg:col-span-1'>
+            {/* <div className='lg:col-span-1'>
               <div className='px-4 py-2 text-2xl lg:text-3xl border-2 border-neutral-300 rounded-full text-neutral-700 font-medium mb-2 inline-block'>
                 info@kwam2.com
               </div>
               <p className='text-muted-foreground lg:text-lg'>
                 MAIN OFFICE 901 N Pit Street Alexandria VA, 22314
               </p>
-            </div>
+            </div> */}
 
             {/* Company Links */}
             <div className='lg:col-span-1'>

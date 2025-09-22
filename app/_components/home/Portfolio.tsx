@@ -122,7 +122,7 @@ const Portfolio = () => {
                   }}
                 >
                 <div className={`w-[400px] h-[380px] rounded-3xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 ${
-                  isActive ? 'bg-primary text-primary-foreground' : 'bg-card text-card-foreground border border-border'
+                  isActive ? 'bg-orange-400 text-primary-foreground' : 'bg-card text-card-foreground border border-border'
                 }`}>
                 {/* Price Tag */}
                 {/* <div className="absolute top-4 right-4 bg-white text-black px-3 py-2 rounded-full text-lg font-semibold">

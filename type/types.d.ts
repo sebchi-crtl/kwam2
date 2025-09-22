@@ -4,5 +4,6 @@ interface TeamMember {
     title: string;
     image: string;
     height?: string;
+    postion?: string;
 }
   
