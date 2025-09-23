@@ -8,7 +8,7 @@ export default function Team() {
           title: "Chief of Governance & Compliance",
           image: "/image/meet/olivias.jpg",
           postion: "-mt-48",
-          // height: "h-98 "
+          // height: "scale-75 "
         },
         {
           name: "Sebastine",

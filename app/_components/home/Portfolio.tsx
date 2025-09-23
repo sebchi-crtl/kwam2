@@ -30,14 +30,14 @@ const Portfolio = () => {
     {
       id: 5,
       logo: '/image/fco.svg',
-      name: 'Frosted & Co',
-      size: 'w-24 h-30'
+      name: 'Frosted & Co'
+      // size: 'w-30 h-36'
     },
     {
       id: 6,
       logo: '/image/tofg.svg',
-      name: 'TOFG',
-      size: 'w-50 h-45'
+      name: 'TOFG'
+      // size: 'w-24 h-34'
     },
     {
       id: 7,
@@ -130,7 +130,7 @@ const Portfolio = () => {
                 </div> */}
                     
                   {/* Logo/Image */}
-                  <div className={` ${item.size ? item.size : 'w-32 h-32'}  mx-auto mb-6 flex items-center justify-center`}>
+                  <div className={` ${ 'w-32 h-32'}  mx-auto mb-6 flex items-center justify-center`}>
                     <Image 
                       src={item.logo} 
                       alt={item.name}

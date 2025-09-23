@@ -5,7 +5,7 @@ export default function JoinUs(){
         <div className="text-foreground relative max-w-6xl mx-auto max-md:px-4">
             {/* Top Text - Centered */}
             <div className="text-left pt-20">
-                <h1 className="text-4xl lg:text-6xl font-bold text-green-900 animate-fade-in-up hover:scale-105 transition-transform duration-300">
+                <h1 className="text-4xl lg:text-6xl font-bold text-[#5CA90C] animate-fade-in-up hover:scale-105 transition-transform duration-300">
                     Come work with Us
                 </h1>
                 <p className="text-foreground max-w-3xl mt-3 animate-fade-in-up-delay">

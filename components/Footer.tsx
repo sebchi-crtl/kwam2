@@ -17,7 +17,7 @@ const Footer = () => {
       {/* Footer Section */}
       <footer className='bg-background border-t border-border'>
         <div className='max-w-[120rem] mx-auto px-8 xl:px-24 py-12'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 min-md:place-items-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-md:place-items-center'>
             {/* Company Branding */}
             <div className='lg:col-span-1'>
                 <Image src="/kwam2.svg" alt="logo" width={200} height={200} />
@@ -48,21 +48,21 @@ const Footer = () => {
             <div className='lg:col-span-1'>
               <h4 className='text-2xl lg:text-3xl font-semibold text-foreground mb-4'>Company</h4>
               <ul className='space-y-2 text-lg lg:text-xl'>
-                <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>About Us</a></li>
-                <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>Contact Us</a></li>
-                <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>Testimonial</a></li>
+                <li><a href="/about" className='text-muted-foreground hover:text-foreground transition-colors'>About Us</a></li>
+                <li><a href="/meet" className='text-muted-foreground hover:text-foreground transition-colors'>Meet the Team</a></li>
+                <li><a href="mailto:Partners@Kwam2.com" className='text-muted-foreground hover:text-foreground transition-colors'>Contact Us</a></li>
               </ul>
             </div>
 
             {/* Support Links */}
-            <div className='lg:col-span-1'>
+            {/* <div className='lg:col-span-1'>
               <h4 className='text-2xl lg:text-3xl font-semibold text-foreground mb-4'>Support</h4>
               <ul className='space-y-2 text-lg lg:text-xl'>
                 <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>Help center</a></li>
                 <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>Terms of service</a></li>
                 <li><a href="#" className='text-muted-foreground hover:text-foreground transition-colors'>Privacy Policy</a></li>
               </ul>
-            </div>
+            </div> */}
 
           </div>
 
