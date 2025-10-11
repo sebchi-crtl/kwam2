@@ -7,7 +7,7 @@ export default function Feature() {
       <section className="text-left max-w-[120rem] mx-auto px-8 xl:px-24 mb-44 mt-32">
         <h1 className="text-4xl text-left md:text-6xl xl:text-8xl font-semibold dark:text-black text-white mb-6 font-rubik flex flex-col animate-fade-in-up">
           Featured Projects
-          <span className="text-muted-foreground font-light text-xl xl:text-2xl animate-fade-in-up-delay">
+          <span className="text-muted-foreground dark:text-black font-light text-xl xl:text-2xl animate-fade-in-up-delay">
             A glimpse of attend
           </span>
         </h1>
@@ -15,7 +15,7 @@ export default function Feature() {
           <Card className="bg-card text-card-foreground border-0 shadow-none relative px-4 xl:px-10 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] animate-fade-in-up-delay-2">
             <CardHeader>
               <CardTitle className="flex justify-start items-start">
-                <Image src="/image/landing/Icon-black.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
+                <Image src="/image/landing/Icon-pink.svg" className=" w-full xl:w-[15rem] 3xl:w-[20rem] h-12 xl:h-26 object-contain" alt="logo" width={100} height={100} />
               </CardTitle>
             </CardHeader>
             <CardContent>

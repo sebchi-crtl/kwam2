@@ -6,19 +6,21 @@ export default function Team() {
         {
           name: "Olivia",
           title: "Chief of Governance & Compliance",
-          image: "/image/meet/olivias.jpg",
-          postion: "-mt-48",
-          // height: "scale-75 "
+          image: "/image/meet/oli.jpg",
+          postion: "mt-3",
+          height: "scale-140 "
         },
         {
           name: "Sebastine",
           title: "Executive Director",
-          image: "/image/team/jordan.jpg"
+          image: "/image/meet/seb.jpg",
+          postion: "-mb-8",
+          height: " h-48 "
         },
         {
           name: "Ifeoma",
           title: "Quality Assurance Lead",
-          image: "/image/meet/ife.jpg"
+          image: "/image/meet/ifeoma.jpg"
         },
         {
           name: "Ayobami",
@@ -43,14 +45,14 @@ export default function Team() {
     const gridCards = [
         // Row 1
         { member: teamMembers[0], color: "orange", offset: "translate-y-0" }, // Emma (orange) - top
-        { member: teamMembers[1], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Maya (green) - lower
+        { member: teamMembers[1], color: "orange", offset: "translate-y-0 lg:translate-y-16" },  // Maya (green) - lower
         { member: teamMembers[2], color: "orange", offset: "translate-y-0" }, // Jordan (orange) - top
         // { member: teamMembers[0], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Emma (green) - lower
         
         // Row 2
-        { member: teamMembers[3], color: "green", offset: "translate-y-0" }, // Maya (orange) - top
+        { member: teamMembers[3], color: "orange", offset: "translate-y-0" }, // Maya (orange) - top
         { member: teamMembers[4], color: "orange", offset: "translate-y-0 lg:translate-y-16" },  // Alex (green) - lower
-        { member: teamMembers[5], color: "green", offset: "translate-y-0" }, // Alex (orange) - top
+        { member: teamMembers[5], color: "orange", offset: "translate-y-0" }, // Alex (orange) - top
         // { member: teamMembers[1], color: "green", offset: "translate-y-0 lg:translate-y-16" },  // Maya (green) - lower
         
         // Row 3
