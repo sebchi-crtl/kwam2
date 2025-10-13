@@ -6,9 +6,9 @@ export default function Team() {
         {
           name: "Olivia",
           title: "Chief of Governance & Compliance",
-          image: "/image/meet/oli.jpg",
-          postion: "mt-12",
-          height: "scale-170 "
+          image: "/image/meet/olivias.jpg",
+          postion: "-mt-40",
+          height: "scale-100 "
         },
         {
           name: "Sebastine",
@@ -88,7 +88,7 @@ export default function Team() {
                         <div className='w-44 h-44 rounded-full mb-12 overflow-hidden '>
                             <div className='w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center'>
                               <span className={`text-2xl font-bold text-muted-foreground w-54 h-54 ${item.member.postion}`}>
-                              <Image src={item.member.image} className={`w-full ${item.member.height}`} width={100} height={100} alt="" />
+                              <Image src={item.member.image} className={`w-full ${item.member.height} grayscale`} width={100} height={100} alt="" />
                             </span>
                             </div>
                         </div>

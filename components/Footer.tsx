@@ -51,6 +51,7 @@ const Footer = () => {
                 <li><a href="/about" className='text-muted-foreground hover:text-foreground transition-colors'>About Us</a></li>
                 <li><a href="/meet" className='text-muted-foreground hover:text-foreground transition-colors'>Meet the Team</a></li>
                 <li><a href="/jobs" className='text-muted-foreground hover:text-foreground transition-colors'>Jobs</a></li>
+                <li><a href="/reps-guides" className='text-muted-foreground hover:text-foreground transition-colors'>Reps & Guides</a></li>
                 <li><a href="mailto:Partners@Kwam2.com" className='text-muted-foreground hover:text-foreground transition-colors'>Contact Us</a></li>
               </ul>
             </div>
