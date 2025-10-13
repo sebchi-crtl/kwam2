@@ -14,7 +14,7 @@ export default function JoinUs(){
             </div>
             
             {/* Bottom Left Section */}
-            <Link target="_blank" href={"https://tally.so/r/3Xdprd"} className="flex items-center space-x-4 animate-fade-in-up-delay-2">
+            <Link href={"/jobs"} className="flex items-center space-x-4 animate-fade-in-up-delay-2">
                 {/* Open Position Text */}
                 <span className="text-2xl font-bold text-foreground hover:scale-105 transition-transform duration-300">
                     Open positions
