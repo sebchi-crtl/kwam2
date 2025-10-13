@@ -146,7 +146,7 @@ const Jobs = () => {
       </section>
 
       {/* Why Work With Us Section */}
-      <section className="max-w-6xl mx-auto px-8 xl:px-24 py-16">
+      {/* <section className="max-w-6xl mx-auto px-8 xl:px-24 py-16">
         <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-12 text-center">
           Why Work With Us?
         </h2>
@@ -182,7 +182,7 @@ const Jobs = () => {
             <p className="text-muted-foreground">Continuous learning and career development opportunities</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="max-w-6xl mx-auto px-8 xl:px-24 py-16 text-center">
