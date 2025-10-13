@@ -187,10 +187,10 @@ const Jobs = () => {
       {/* CTA Section */}
       <section className="max-w-6xl mx-auto px-8 xl:px-24 py-16 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-          Don't See Your Role?
+          Don&apos;t See Your Role?
         </h2>
         <p className="text-xl text-muted-foreground mb-8">
-          We're always looking for talented individuals to join our team
+          We&apos;re always looking for talented individuals to join our team
         </p>
         <Link 
           href="https://tally.so/r/3Xdprd" 
