@@ -7,8 +7,8 @@ export default function Team() {
           name: "Olivia",
           title: "Chief of Governance & Compliance",
           image: "/image/meet/oli.jpg",
-          postion: "mt-3",
-          height: "scale-140 "
+          postion: "mt-12",
+          height: "scale-170 "
         },
         {
           name: "Sebastine",
