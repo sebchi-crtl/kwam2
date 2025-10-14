@@ -27,6 +27,9 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "KWAM 2 - Unlock the potential",
   description: "KWAM 2 - Coming Soon",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
