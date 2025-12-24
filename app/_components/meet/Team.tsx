@@ -11,9 +11,9 @@ export default function Team() {
           height: "scale-100 "
         },
         {
-          name: "Sebastine",
-          title: "Executive Director",
-          image: "/image/meet/seb.jpg",
+          name: "Awaal",
+          title: "Software Engineer",
+          image: "/image/meet/awonoru.jpg",
           postion: "-mb-8",
           height: " h-48 "
         },
